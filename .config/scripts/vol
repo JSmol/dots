@@ -1,0 +1,21 @@
+#/bin/bash
+mute=`pamixer --get-mute`
+
+if [ $mute = true ] ; then
+  echo "Muted"
+else
+  vol=`pamixer --get-volume`
+  echo $vol
+  for i in {5..100..5} ; do
+    if [ $i -le $vol ] ; then
+      # echo -n ▪
+      echo -n ◼
+    else
+      # echo -n ▫
+      echo -n ◻
+    fi
+  done
+fi
+
+notify-send.sh --replace-file=/tmp/volumenotification "Volume" "$(amixer sset Master 5%+ | awk '/[0-9]+%/ {print $2,$5}')"
+

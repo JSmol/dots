@@ -1,0 +1,13 @@
+rofi.combi-modi:    window,drun,ssh
+rofi.font:          hack 16
+rofi.modi:          combi
+# rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+
+rofi.separator-style: 	solid
+rofi.sidebar-mode:    	true
+rofi.padding:         	10
+rofi.bw:              	0
+rofi.scrollbar-width: 	0
+rofi.line-margin:     	0
+rofi.case-sensitive: 	false

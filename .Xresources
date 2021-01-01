@@ -1,0 +1,21 @@
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.font: xft:Hack:size=18:antialias=true
+urxvt.boldFont: xft:Hack:size=18:antialia=true
+
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting:    false
+Xft.antialias:  true
+Xft.rgba:       rgb
+
+urxvt.internalBorder: 64
+urxvt.intensityStyles: false
+
+! copy paste
+URxvt.perl-ext-common: selection-to-clipboard
+
+! disable ctrl-shift
+URxvt.iso14755: false
+URxvt.iso14755_52: false

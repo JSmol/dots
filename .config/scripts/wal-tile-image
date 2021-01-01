@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo $1
+
+wal -i $1
+
+# reset dunst
+pkill dunst
+source "$HOME/.cache/wal/colors.sh"
+dunst -frame_color $color8 -lb $background -nb $background -cb $background -lf $foreground -nf $foreground -cf $foreground -lfr $foreground -nfr $foreground -cfr $foreground &
+
+# reset alacritty color
+~/rice/scripts/colors.sh
+
+# notify send
+~/rice/scripts/notify-send.sh "wallpaper set!" "$(basename $wallpaper)"
+
+# reset xmonad
+xmonad --restart
+

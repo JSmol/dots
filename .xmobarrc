@@ -1,0 +1,33 @@
+Config {  font = "xft:Hack:size=12:antialias=true:hinting=true"
+        , additionalFonts = [ 
+                              "xft:Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid:pixelsize=16:antialias=true:hinting=true",
+                              "xft:Hack:size=12:antialias=true:hinting=true"
+                            ]
+        , border = BottomB
+        , borderColor = "darkgrey"
+        , borderWidth = 1
+        , alpha = 255
+        , bgColor = "#000000"
+        , fgColor = "white"
+        , position = TopW C 100
+        , commands = [ Run StdinReader
+                     --Run Cpu ["-t", "<total>% <fn=1>\xf2db</fn>"] 10
+                     --Run Memory ["-t","<usedratio>% <fn=1>\xf5fd</fn>"] 10
+                     , Run Date "%b %_d %H:%M <fn=1>\xf017</fn>" "date" 10
+                     , Run Battery [ "--template" , "<acstatus> <fn=1>\xf0e7</fn>"
+                                   , "--"
+                                   , "-o"	, "<left>%"
+                                   , "-O"	, "Charging"
+                                   , "-i"	, "Charged"
+                                   ] 50
+                     , Run Com "/bin/bash" ["-c", "~/.config/scripts/spotify-song"] "music" 1
+                     ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        , template = " %StdinReader% } <fn=2>%music%</fn> { %battery% | <fc=#FFFFFF>%date%</fc> "
+        , overrideRedirect = True
+        , lowerOnStart = True
+        , hideOnStart = False
+        , persistent = False
+      }
+}
