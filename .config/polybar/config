@@ -22,8 +22,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-;line-color = #f00
+line-size = 4
 
 border-size = 4
 border-color = #00000000
@@ -83,7 +82,7 @@ label-empty-foreground = ${colors.foreground}
 label-empty-padding = 2
 
 ; Separator in between workspaces
-label-separator = |
+;label-separator = |
 
 [module/spotify]
 type = custom/script

@@ -5,9 +5,11 @@ SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr_pacman:sudo\x20pacman
+SETUVAR _fish_abbr_activate:source\x20env/bin/activate\x2efish
+SETUVAR _fish_abbr_mkenv:python\x20\x2dm\x20venv\x20env
+SETUVAR _fish_abbr_pc:sudo\x20pacman
 SETUVAR _fish_abbr_rs:redshift\x20\x2dP\x20\x2dr\x20\x2dO
-SETUVAR _fish_abbr_wal:\x7e/rice/scripts/wal\x2dtile\x2dimage
+SETUVAR _fish_abbr_wal:/home/josip/\x2econfig/scripts/wal\x2dtile\x2dimage
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:brblue

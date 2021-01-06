@@ -1,18 +1,19 @@
 #!/bin/bash
 
-wal -i ~/pictures/wallpapers/ 
+# select a random image from wallpapers dir
+wal -i $HOME/pictures/wallpapers/ 
 
 # reset dunst
 pkill dunst
-source "$HOME/.cache/wal/colors.sh"
+source $HOME/.cache/wal/colors.sh
 dunst -frame_color $color8 -lb $background -nb $background -cb $background -lf $foreground -nf $foreground -cf $foreground -lfr $foreground -nfr $foreground -cfr $foreground &
 
 # reset alacritty color
-~/rice/scripts/colors.sh
+$HOME/.config/scripts/colors
 
 # notify send
-~/rice/scripts/notify-send.sh "wallpaper set!" "$(basename $wallpaper)"
+$HOME/.config/scripts/notify-send.sh "wallpaper set!" "$(basename $wallpaper)"
 
-# reset xmonad
-xmonad --restart
+# reset xmonad (bspwm is automagically reset)
+# xmonad --restart
 

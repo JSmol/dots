@@ -43,7 +43,6 @@ map <leader>sk :! python3 ~/competitive/submit.py %<CR>
 map <leader>tp :r ~/competitive/template.cc<CR>ggdd
 map <leader>a :tabnew ~/competitive/algorithms<CR>
 map <leader>i :tabnew test.in<CR>
-map <leader>c :Goyo<CR><CR>
 
 " set spelllang=en
 " set spell

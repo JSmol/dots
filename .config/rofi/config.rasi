@@ -1,24 +1,30 @@
 configuration {
-	modi: "combi,drun,ssh";
-	// combi-modi: "window,drun,ssh";
+	modi: "drun,ssh";
 
-	font: "hack 22";
-
+	font: "hack 20";
 	case-sensitive: false;
-
 	separator-style: "solid";
 
-	hide-scrollbar: true;
+  display-drun: "";
+  display-ssh: "";
 
+	hide-scrollbar: true;
   show-icons: true;
-  fullscreen: true;
+  fullscreen: false;
 
   sidebar-mode: false;
-}
 
-#window {
-
+  /* keyboard */
+	kb-move-front: "Control+a";
+	kb-move-end: "Control+e";
+	kb-accept-entry: "Return";
+	kb-mode-next: "Shift+Right,Super+Tab,Super+l";
+	kb-mode-previous: "Shift+Left,Super+Shift+Tab,Super+h";
+	kb-row-up: "Up,Super+k";
+	kb-row-down: "Down,Super+j";
 }
 
 @import "~/.cache/wal/colors-rofi-dark"
-
+element {
+	padding: 8;
+}
