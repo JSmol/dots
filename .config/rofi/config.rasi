@@ -1,0 +1,24 @@
+configuration {
+	modi: "combi,drun,ssh";
+	// combi-modi: "window,drun,ssh";
+
+	font: "hack 22";
+
+	case-sensitive: false;
+
+	separator-style: "solid";
+
+	hide-scrollbar: true;
+
+  show-icons: true;
+  fullscreen: true;
+
+  sidebar-mode: false;
+}
+
+#window {
+
+}
+
+@import "~/.cache/wal/colors-rofi-dark"
+
