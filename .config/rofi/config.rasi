@@ -10,7 +10,7 @@ configuration {
 
 	hide-scrollbar: true;
   show-icons: true;
-  fullscreen: false;
+  fullscreen: true;
 
   sidebar-mode: false;
 
@@ -27,4 +27,10 @@ configuration {
 @import "~/.cache/wal/colors-rofi-dark"
 element {
 	padding: 8;
+}
+
+window {
+	padding: 256;
+	padding-left: 40%;
+	padding-right: 40%;
 }
