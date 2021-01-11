@@ -1,3 +1,6 @@
+
+Xcursor.theme: Bibata-Original-Ice
+
 urxvt.termName: rxvt-unicode
 urxvt.scrollBar: false
 urxvt.font: xft:Hack:size=18:antialias=true

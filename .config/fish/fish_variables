@@ -9,7 +9,7 @@ SETUVAR _fish_abbr_activate:source\x20env/bin/activate\x2efish
 SETUVAR _fish_abbr_mkenv:python\x20\x2dm\x20venv\x20env
 SETUVAR _fish_abbr_pc:sudo\x20pacman
 SETUVAR _fish_abbr_rs:redshift\x20\x2dP\x20\x2dr\x20\x2dO
-SETUVAR _fish_abbr_wal:/home/josip/\x2econfig/scripts/wal\x2dtile\x2dimage
+SETUVAR centeropen:false
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:brblue
@@ -33,9 +33,10 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:brgreen
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:\x1b\x5b38\x3b5\x3b1ma\x20e\x20s\x20t\x20h\x20e\x20t\x20i\x20c\x20s
+SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR widgetsopen:false

@@ -2,24 +2,35 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4
+bspc monitor -d 1 2 3 4 5 hidden
 
 bspc config focus_follows_pointer true 
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+bspc config single_monocle true
 
 bspc config border_width         2
-bspc config window_gap          16
+bspc config window_gap           16
 
-bspc config split_ratio          0.60
+bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      false
 
-bspc config top_padding          48
+# (space on top is 80px) (440 to sides)
+bspc config top_padding          0 
 bspc config bottom_padding       32
 bspc config left_padding         32
 bspc config right_padding        32
 
+bspc config top_monocle_padding          0 
+bspc config bottom_monocle_padding       0
+bspc config left_monocle_padding         408
+bspc config right_monocle_padding        408
+
 bspc rule -a firefox desktop='^2' follow=on
-bspc rule -a discord desktop='^3' follow=off fullscreen=on
-bspc rule -a spotify desktop='^4' follow=off fullscreen=on
+bspc rule -a discord desktop='^3' follow=off
+bspc rule -a spotify desktop='^4' follow=off
+
+# bspc rule -a eww-music sticky=on border=off
 
 sh $HOME/.config/polybar/launch.sh &

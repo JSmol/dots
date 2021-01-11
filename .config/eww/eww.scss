@@ -1,0 +1,90 @@
+@import '/home/josip/.cache/wal/colors';
+
+* {
+  all: unset;
+}
+
+window {
+  background-color: $background;
+  border-radius: 16px;
+  font-family: Hack;
+}
+
+/* side */
+.songimg {
+  margin: 30px;
+}
+
+.songname {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: $color3;
+}
+
+.music-btn {
+  padding-left: 60px;
+  padding-right: 60px;
+  color: $color1;
+}
+
+.playpause {
+  color: $color4;
+}
+
+button {
+  background-color: $background;
+  border-radius: 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $background;
+  margin: 8px;
+  padding: 8px;
+  font-size: 22px;
+}
+
+button:hover {
+  color: $color2;
+}
+
+.weather-icon {
+  font-size: 80px;
+  margin: 20px 0px 0px 0px;
+}
+
+.weather-stat {
+  font-size: 20px;
+  font-weight: bold;
+  color: $color1;
+}
+
+.temperature {
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: $color3;
+}
+
+/* center */
+.wal-image {
+  background-repeat: no-repeat;
+  background-image: url($wallpaper);
+  background-size: cover;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.wal-color {
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+}
+
+/* is this stupid? */
+.color1 { color: $color1; }
+.color2 { color: $color2; }
+.color3 { color: $color3; }
+.color4 { color: $color4; }
+.color5 { color: $color5; }
+.color6 { color: $color6; }
+.color7 { color: $color7; }

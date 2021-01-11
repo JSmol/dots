@@ -1,7 +1,13 @@
 # wm independent hotkeys
 
 F1
-  $HOME/.config/scripts/wal-tile
+	fish -c wal-random
+
+F3
+  sh $HOME/.screenlayout/1bigmonitor.sh
+
+F12
+	widgets
 
 XF86AudioMute
 	pamixer -t
@@ -18,8 +24,12 @@ super + Return
 
 # program launcher
 super + p
-  rofi -show drun
+	rofi -show drun
 
+# center lock
+super + c
+	center
+	
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

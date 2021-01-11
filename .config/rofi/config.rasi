@@ -1,16 +1,19 @@
 configuration {
 	modi: "drun,ssh";
 
-	font: "hack 20";
+	font: "Inconsolata 40px";
 	case-sensitive: false;
-	separator-style: "solid";
 
-  display-drun: "";
-  display-ssh: "";
+  drun-display-format: "{name}";
+
+	display-drun: " ";
+  display-ssh: " ";
 
 	hide-scrollbar: true;
-  show-icons: true;
-  fullscreen: true;
+	fullscreen: false;
+	
+	show-icons: true;
+	icon-theme: "candy-icons";
 
   sidebar-mode: false;
 
@@ -25,12 +28,44 @@ configuration {
 }
 
 @import "~/.cache/wal/colors-rofi-dark"
-element {
-	padding: 8;
-}
 
 window {
-	padding: 256;
-	padding-left: 40%;
-	padding-right: 40%;
+	width: 380px;
+	height: 600px;
+	location: northwest;
+	x-offset: 20;
+	y-offset: 120;
+	
+	padding: 20;
+	border-radius: 16;
+  /* children: [ horibox ]; */
+}
+
+/* 
+horibox {
+  orientation: horizontal;
+  children: [ prompt, entry, listview ];
+}
+
+prompt {
+
+}
+
+listview {
+	lines: 1;
+}
+
+entry {
+	expand: false;
+	width: 10em;
+}
+
+*/
+
+element {
+
+}
+
+element selected {
+
 }
