@@ -1,8 +1,9 @@
 # Linux Setup
 **NOTE:** *heavily* personalized; target audience: me. Do everything here in and you should have an identical environment.
 
-Glam Screenshot
+Glam Screenshots
 ![Screenshot](glam.png)
+![Screenshot](glam2.png)
 
 ## Main configs and Look & Feel
 
