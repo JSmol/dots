@@ -12,7 +12,7 @@ if [ ! -d $tmp_weather ]; then
   mkdir -p $tmp_weather
 fi
 
-KEY="bae5b0d0c7cc8b8842b9553ab4a29217"
+KEY=""
 ID="5913490"
 UNIT="metric" # Options are 'metric' and 'imperial'
 weather=$(curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT"")
