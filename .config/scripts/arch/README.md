@@ -1,7 +1,7 @@
 # Linux Setup
 **NOTE:** *heavily* personalized; target audience: me. Do everything here in and you should have an identical environment.
 
-Glam Screenshots
+Glam Screenshots; weather API died :'(
 ![Screenshot](glam.png)
 ![Screenshot](glam2.png)
 
