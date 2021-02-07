@@ -9,7 +9,7 @@ pkgs="xorg xorg-xinit "
 pkgs+="alacritty bspwm sxhkd feh vim dunst openssh rofi xdg-user-dirs xf86-input-synaptics pulseaudio pamixer pavucontrol "
 
 # dev tools
-pkgs+="vim fish python python-pip jupyterlab code docker gcc unzip git github-cli nodejs npm rustup "
+pkgs+="neovim fish python python-pip jupyterlab code docker gcc unzip git github-cli nodejs npm rustup "
 
 # misc
 pkgs+="jq neofetch imagemagick python-pywal redshift firefox discord playerctl "
@@ -23,8 +23,8 @@ aur="spotify polybar picom-git"
 # other
 other="eww starship spotifyd"
 
-# sudo pacman -Sp $pkgs
-echo "manually install: $aur $other" >> TODO
+sudo pacman -S $pkgs
+# echo "manually install: $aur $other" >> TODO
 
 # for website management
 npmpkgs="firebase-tools "
