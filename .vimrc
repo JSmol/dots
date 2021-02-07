@@ -1,3 +1,6 @@
+map <F10> :! ~/competitive/run %<CR>
+" map <F10> :! python % < test.in<CR>
+
 " colors and aesthetics "
 hi CursorLineNr cterm=None
 call plug#begin('~/.vim/plugged')
@@ -7,8 +10,8 @@ syntax enable
 colorscheme wal
 
 " nice stuff "
-" set nowrap "
-set wrap 
+" set wrap is default "
+set nowrap
 set nobackup
 set nowritebackup
 set smarttab
@@ -26,17 +29,21 @@ set timeout timeoutlen=5000 ttimeoutlen=100
 " tabs "
 map <C-t> :tabnew<Space>
 map <C-n> :tabn<CR>
-map <C-p> :tabp<CR>
 
 " panes "
 map <C-\> :vsp<Space>
-map <C-j> <C-w>w
-map <C-k> <C-w>W
+map <C-k> :wincmd k<CR>
+map <C-j> :wincmd j<CR>
+map <C-h> :wincmd h<CR>
+map <C-l> :wincmd l<CR>
 
+" random shorthands "
 map <F4> :!pdflatex %<CR>
+map <leader>v :tabnew ~/.vimrc<CR>
+map <leader>n :tabnew ~/.config/nvim/init.vim<CR>
+map <leader>fc :tabnew ~/.config/fish/config.fish<CR>
 
 " competitive programming shortcuts "
-map <F10> :! ~/competitive/run %<CR>
 map <leader>sk :! python3 ~/competitive/submit.py %<CR>
 map <leader>tp :r ~/competitive/template.cc<CR>ggdd
 map <leader>a :tabnew ~/competitive/algorithms<CR>

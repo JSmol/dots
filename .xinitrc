@@ -8,7 +8,10 @@ xsetroot -cursor_name left_ptr
 fish -c wal-random
 
 # redshift -P -O 5000 &
-picom -b --config ~/.config/picom.conf --experimental-backends &
+# picom -b --config ~/.config/picom.conf --experimental-backends &
+
+# https://github.com/ibhagwan/picom
+/home/josip/dev/picom/build/src/picom -b --config ~/.config/picom.conf --experimental-backends &
 
 # exec xmonad
 exec bspwm

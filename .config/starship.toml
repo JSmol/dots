@@ -1,0 +1,130 @@
+add_newline = true
+format = '$all'
+
+[character]                            
+success_symbol = '[➜](bold green)'   
+failure_sumbol = '[➜](bold red)'
+
+[git_branch]
+symbol = ' '
+
+[git_status]
+conflicted = '~'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+# untracked = ' '
+# stashed = ' '
+# modified = ' '
+# staged = ' '
+# renamed = ' '
+# deleted = ' '
+
+[package]
+symbol = ' '
+disabled = false
+style = 'yellow bold'
+
+[directory]
+truncation_length = 20
+
+[gcloud]
+symbol = ' '
+disable = false
+style = 'yellow bold'
+format = 'on [$symbol(\($region\))]($style) '
+
+[rust]
+symbol = 'a'
+disable = false
+style = 'yellow bold'
+
+[nodejs]
+symbol = ' '
+disable = false
+style = 'yellow bold'
+
+[python]
+symbol = ' '
+disable = false
+style = 'yellow bold'
+
+[battery] # only shows when <30%
+full_symbol = ""
+charging_symbol = " "
+discharging_symbol = "  "
+unknown_symbol = "  "
+empty_symbol = "  "
+
+[[battery.display]]  
+threshold = 30
+style = "bold red"
+
+
+################################################################################
+# disabled stuff...
+################################################################################
+[aws]
+disable = true
+[cmake]
+disable = true
+[conda]
+disable = true
+[crystal]
+disable = true
+[dart]
+disable = true
+[docker_context]
+disabled = true
+[dotnet]
+disable = true
+[elixer]
+disable = true
+[elm]
+disable = true
+[erlang]
+disable = true
+[golang]
+disable = true
+[helm]
+disable = true
+[java]
+disable = true
+[julia]
+disable = true
+[kotlin]
+disable = true
+[kubernetes]
+disable = true
+[lua]
+disable = true
+[hg_branch]
+disable = true
+[nim]
+disable = true
+[nix_shell]
+disable = true
+[ocaml]
+disable = true
+[openstack]
+disable = true
+[perl]
+disable = true
+[php]
+disable = true
+[purescript]
+disable = true
+[ruby]
+disable = true
+[shlvl]
+disable = true
+[singularity]
+disable = true
+[swift]
+disable = true
+[terraform]
+disable = true
+[time]
+disable = true
+[zig]
+disable = true

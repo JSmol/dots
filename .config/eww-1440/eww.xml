@@ -68,15 +68,15 @@
 
         <!-- side -->
         <window name="music" stacking="bg" focusable="false">
-            <!-- <geometry x="60px" y="860px" width="300px" height="140px"/> -->
-            <geometry x="60px" y="560px" width="300px" height="140px"/>
+            <geometry x="60px" y="860px" width="300px" height="140px"/> -->
+            <!-- <geometry x="2200px" y="860px" width="300px" height="140px"/> -->
             <widget>
                 <music/>
             </widget>
         </window>
         <window name="weather" stacking="bg">
-            <!-- <geometry x="60px" y="1140px" width="300px" height="178px"/> -->
-            <geometry x="60px" y="840px" width="300px" height="178px"/>
+            <geometry x="60px" y="1140px" width="300px" height="178px"/>
+            <!-- <geometry x="2200px" y="1140px" width="300px" height="178px"/> -->
             <widget>
                 <weather/>
             </widget>
@@ -90,13 +90,13 @@
             </widget>
         </window>
         <window name="wal">
-            <geometry x="540" y="220" width="880px" height="520"/>
+            <geometry x="840" y="420" width="880px" height="520"/>
             <widget>
                 <wal/>
             </widget>
         </window>
         <window name="wal-colors">
-            <geometry x="540" y="760" width="880px" height="80"/>
+            <geometry x="840" y="960" width="880px" height="80"/>
             <widget>
                 <wal-colors/>
             </widget>

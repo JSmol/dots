@@ -3,11 +3,26 @@
 F1
 	fish -c wal-random
 
-F3
+super + F2
+  sh $HOME/.screenlayout/0bigmonitor.sh
+
+super + F3
   sh $HOME/.screenlayout/1bigmonitor.sh
 
-F12
-	widgets
+super + F12
+	toggle-widgets
+
+super + F11
+	toggle-center
+
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl previous
 
 XF86AudioMute
 	pamixer -t
@@ -26,9 +41,6 @@ super + Return
 super + p
 	rofi -show drun
 
-# center lock
-super + c
-	center
 	
 # make sxhkd reload its configuration files:
 super + Escape

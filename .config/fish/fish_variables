@@ -1,14 +1,23 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR EDITOR:vim
+SETUVAR --export GOOGLE_APPLICATION_CREDENTIALS:/home/josip/\x2egcp/gcp\x2ejson
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_activate:source\x20env/bin/activate\x2efish
+SETUVAR _fish_abbr_cranime:youtube\x2ddl\x20\x2d\x2dwrite\x2dsub\x20\x2d\x2dsub\x2dlang\x20enUS
+SETUVAR _fish_abbr_gc:git\x20clone
+SETUVAR _fish_abbr_gcp:gcloud
+SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_mkenv:python\x20\x2dm\x20venv\x20env
 SETUVAR _fish_abbr_pc:sudo\x20pacman
+SETUVAR _fish_abbr_reset_2D_picom:/home/josip/dev/picom/build/src/picom\x20\x2db\x20\x2d\x2dconfig\x20/home/josip/\x2econfig/picom\x2econf\x20\x2d\x2dexperimental\x2dbackends
 SETUVAR _fish_abbr_rs:redshift\x20\x2dP\x20\x2dr\x20\x2dO
+SETUVAR _fish_abbr_v:nvim
+SETUVAR _fish_abbr_vim:nvim
+SETUVAR _fish_abbr_weather:sh\x20/home/josip/\x2econfig/scripts/weather\x2esh
 SETUVAR centeropen:false
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
@@ -39,4 +48,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR widgetsopen:false
+SETUVAR fish_user_paths:/home/josip/\x2elocal/bin/
+SETUVAR widgetsopen:true
