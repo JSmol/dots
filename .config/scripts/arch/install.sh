@@ -14,8 +14,8 @@ pkgs+="neovim fish python python-pip jupyterlab code docker gcc unzip git github
 # misc
 pkgs+="jq neofetch imagemagick python-pywal redshift firefox discord playerctl "
 
-# fonts and shit
-pkgs+="ttf-hack ttf-inconsolata noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-nerd-fonts-symbols-mono "
+# fonts
+pkgs+="ttf-hack ttf-inconsolata noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-nerd-fonts-symbols-mono ttf-font-awesome "
 
 # aur packages
 aur="spotify polybar picom-git"

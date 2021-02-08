@@ -37,7 +37,7 @@ Glam Screenshots; weather API died :'(
 - Run `` curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ``
 - In vim/nvim run `` :PlugInstall ``
-- In nvim run `` :CocInstall coc-html coc-css coc-tsserver coc-vetur ``
+- In nvim run `` :CocInstall coc-html coc-css coc-tsserver coc-vetur `` and `` :UpdateRemotePlugins ``
 
 ### pywal
 - `` pip install pywal `` and populate `` ~/pictures/vibes `` with cool images
@@ -71,6 +71,7 @@ Unit=weather.service
 WantedBy=timers.target
 ```
 - Enable with: `` systemctl enable weather.timer ``
+- make a token file `` weather.token `` in scripts
 
 ### firefox
 - Run `` pip install pywalfox `` and `` pywalfox install ``
