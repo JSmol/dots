@@ -49,8 +49,8 @@ function eww-reset
 end
 
 function theme-reset
-  sh $HOME/.config/scripts/colors.sh
-  sh $HOME/.config/scripts/dunst.sh
+  sh $HOME/.config/misc/colors.sh
+  sh $HOME/.config/misc/dunst.sh
   pywalfox update
   set -U widgetsopen false
   set -U centeropen false
@@ -58,7 +58,7 @@ function theme-reset
 end
 
 function wal-random
-  wal -i $HOME/pictures/vibes/ 
+  wal -i $HOME/images/vibes
   theme-reset
 end
 

@@ -1,11 +1,10 @@
-
 import: 
   - /home/josip/.config/alacritty/colors.yml
 
 window:
   padding:
-    x: 64
-    y: 64
+    x: 32
+    y: 32
 
   dynamic_padding: true
 
@@ -29,9 +28,9 @@ font:
     family: Inconsolata
     style: Bold Italic
 
-  # depends on reso a lot....
-  # size: 14
-  size: 10
+  # depends on reso and scrn size lot....
+  size: 14
+  # size: 10
 
   offset:
     x: 0

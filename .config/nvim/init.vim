@@ -6,13 +6,29 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
 " Plug 'romgrk/barbar.nvim'
+Plug 'dag/vim-fish'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'dylanaraps/wal.vim'
+
 call plug#end()
 
 tnoremap <Esc> <C-\><C-n>
 map <leader>sv :source ~/.config/nvim/init.vim<CR>
 map <leader>sh :term<CR>i
+
+" TABS "
+map <A-1> :tabn 1<CR>
+map <A-2> :tabn 2<CR>
+map <A-3> :tabn 3<CR>
+map <A-4> :tabn 4<CR>
+map <A-5> :tabn 5<CR>
+map <A-6> :tabn 6<CR>
+map <A-7> :tabn 7<CR>
+map <A-8> :tabn 8<CR>
+map <A-9> :tabn 9<CR>
 
 " defx "
 nnoremap <silent> - :<C-U>:Defx `expand('%:p:h')` -search=`expand('%:p')` -buffer-name=defx<CR>
@@ -47,7 +63,7 @@ call denite#custom#var('file/rec', 'command', ['scantree.py', '--path', ':direct
 
 map <C-p> :Denite file/rec -winheight=`40*winheight(0) / 100`<CR>i
 
-" B A R S "
+" B A R S " TODO:
 " Magic buffer-picking mode
 nnoremap <silent> <C-s> :BufferPick<CR>
 " Move to previous/next
@@ -57,15 +73,15 @@ nnoremap <silent>    <A-.> :BufferNext<CR>
 nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
 nnoremap <silent>    <A->> :BufferMoveNext<CR>
 " Goto buffer in position...
-nnoremap <silent>    <A-1> :BufferGoto 1<CR>
-nnoremap <silent>    <A-2> :BufferGoto 2<CR>
-nnoremap <silent>    <A-3> :BufferGoto 3<CR>
-nnoremap <silent>    <A-4> :BufferGoto 4<CR>
-nnoremap <silent>    <A-5> :BufferGoto 5<CR>
-nnoremap <silent>    <A-6> :BufferGoto 6<CR>
-nnoremap <silent>    <A-7> :BufferGoto 7<CR>
-nnoremap <silent>    <A-8> :BufferGoto 8<CR>
-nnoremap <silent>    <A-9> :BufferLast<CR>
+" nnoremap <silent>    <A-1> :BufferGoto 1<CR>
+" nnoremap <silent>    <A-2> :BufferGoto 2<CR>
+" nnoremap <silent>    <A-3> :BufferGoto 3<CR>
+" nnoremap <silent>    <A-4> :BufferGoto 4<CR>
+" nnoremap <silent>    <A-5> :BufferGoto 5<CR>
+" nnoremap <silent>    <A-6> :BufferGoto 6<CR>
+" nnoremap <silent>    <A-7> :BufferGoto 7<CR>
+" nnoremap <silent>    <A-8> :BufferGoto 8<CR>
+" nnoremap <silent>    <A-9> :BufferLast<CR>
 " Close buffer
 nnoremap <silent>    <A-c> :BufferClose<CR>
 
@@ -232,3 +248,4 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+highlight Pmenu ctermbg=black

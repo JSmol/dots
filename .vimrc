@@ -1,5 +1,6 @@
 map <F10> :! ~/competitive/run %<CR>
 " map <F10> :! python % < test.in<CR>
+" map<F10> :! npm run test<CR>
 
 " colors and aesthetics "
 hi CursorLineNr cterm=None
@@ -17,8 +18,8 @@ set nowritebackup
 set smarttab
 set expandtab
 set tabstop=2
-set softtabstop=0
-set shiftwidth=0
+set softtabstop=2
+set shiftwidth=2
 set number relativenumber
 set ai
 set si
