@@ -30,6 +30,9 @@ map <A-7> :tabn 7<CR>
 map <A-8> :tabn 8<CR>
 map <A-9> :tabn 9<CR>
 
+" annoying hist file "
+let g:netrw_dirhistmax = 0
+
 " defx "
 nnoremap <silent> - :<C-U>:Defx `expand('%:p:h')` -search=`expand('%:p')` -buffer-name=defx<CR>
 autocmd FileType defx call s:defx_my_settings()

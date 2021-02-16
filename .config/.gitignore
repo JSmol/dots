@@ -1,0 +1,15 @@
+coc
+configstore
+dconf
+discord
+Electron
+gtk-3.0
+matplotlib
+pulse
+spotify
+wal
+
+alacritty/colors.yml
+gh/hosts.yml
+misc/weater.token
+pavucontrol.ini

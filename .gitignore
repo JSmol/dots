@@ -1,0 +1,20 @@
+competitive/
+website/
+downloads/
+dev/
+
+.cache/
+.local/
+.ssh/
+.vim/
+.gnupg/
+.mozilla/
+
+.Xauthority
+.fehbg
+.python_history
+.viminfo
+
+# too large to track in github
+.icons/
+
