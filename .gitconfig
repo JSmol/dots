@@ -1,7 +1,12 @@
 [user]
 	email = josips@live.ca
-	name = josip
+  name = josip
+  
 [credential "https://github.com"]
-	helper = !gh auth git-credential
+  helper = !gh auth git-credential
+
 [init]
-	defaultBranch = main
+  defaultBranch = main
+
+[core]
+  editor = vim
