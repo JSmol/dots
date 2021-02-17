@@ -5,7 +5,7 @@ cd $HOME
 # xorg (xf86-video-vesa)
 pkgs="xorg xorg-xinit "
 # wm environment and tools
-pkgs+="alacritty bspwm sxhkd feh vim dunst openssh rofi xdg-user-dirs xf86-input-synaptics pulseaudio pamixer pavucontrol "
+pkgs+="alacritty bspwm sxhkd feh vim dunst openssh rofi xdg-user-dirs xdg-utils xf86-input-synaptics pulseaudio pamixer pavucontrol "
 # dev tools
 pkgs+="neovim fish python python-pip docker gcc unzip git github-cli nodejs npm rustup "
 # misc

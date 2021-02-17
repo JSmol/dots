@@ -11,11 +11,11 @@ if [ ! -d $tmp_weather ]; then
 fi
 
 ID="5913490"
-KEY=$(<$HOME/.config/misc/weather.token)
+KEY=$(</home/josip/.config/misc/weather.token)
 UNIT="metric" # Options are 'metric' and 'imperial'
 weather=$(curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT"")
 
-source $HOME/.cache/wal/colors.sh
+source /home/josip/.cache/wal/colors.sh
 
 if [ ! -z "$weather" ]; then
   weather_temp=$(echo "$weather" | jq ".main.temp" | cut -d "." -f 1)

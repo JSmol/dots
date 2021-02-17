@@ -9,6 +9,10 @@ dev/
 .vim/
 .gnupg/
 .mozilla/
+.cargo/
+.rustup/
+.pki/
+.npm/
 
 .Xauthority
 .fehbg
