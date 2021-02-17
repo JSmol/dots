@@ -15,7 +15,7 @@ Glam Screenshots; weather API died :'(
 - make a user, log in and in ~ do:
   - Remove all of ~ with `` rm -rf * ``
   - Copy dots: `` git clone https://github.com/JSmol/dots.git . ``
-  - Make dirs: `` mkdir downloads pictures dev ``
+  - Make dirs: `` mkdir downloads dev ``
 - Install software: `` sh ~/.config/scripts/arch/install.sh `` **NOTE:** This installs a lot of stuff
 - Change shell is automatic, otherwise run `` chsh -s `which fish` ``
 
@@ -35,10 +35,10 @@ Glam Screenshots; weather API died :'(
 ### vim & neovim
 - pynvim and vim plug is installed
 - In vim/nvim run `` :PlugInstall ``
-- In nvim run `` :CocInstall coc-html coc-css coc-tsserver coc-vetur `` and `` :UpdateRemotePlugins ``
+- In nvim run `` :CocInstall coc-html coc-css coc-tsserver `` and `` :UpdateRemotePlugins ``
 
 ### pywal
-- pywal is installed, populate `` ~/pictures/vibes `` with cool images!
+- pywal is installed, populate `` ~/pictures/vibes `` with cool images and press F1 to switch between desktop themes randomly
 
 ### icons and cursor
 - Icons: `` mkdir .icons ``
@@ -53,7 +53,7 @@ Glam Screenshots; weather API died :'(
 Description=Weather
 
 [Service]
-ExecStart=/home/josip/.config/scripts/weather.sh
+ExecStart=/home/josip/.config/misc/weather.sh
 ```
 - `` sudo vim weather.timer `` and write 
 ```
